@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Portfolio</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="container">
+        <a class="logo" href="/">Aishwarya Rani</a>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills-section">My Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+    </div>
+    </div>
+
+    <div class="right">
+      <a href="https://github.com/aishrani" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+        <span>Github</span>
+      </a>
+      
+      <a href="https://www.linkedin.com/in/aishwarya-rani-867981181?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BN6wjLz9WS86VC8tTVLzn9Q%3D%3D" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>Linkedin</span>
+      </a>
+      
+      <a href="mailto:aishwaryarani42@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: Hero -->
+    <section id="about" class="hero-section">
+      <div class="text">
+        <h2>Hi, I'm Aishwarya Rani 👋</h2>
+        <p>A passionate Front-End Developer with a knack for creating visually stunning and user-friendly websites. With a solid foundation in HTML, CSS, and JavaScript, I specialize in turning complex problems into elegant web solutions. My journey in web development began [1years/8 months] ago, and since then, I've been dedicated to honing my skills and keeping up with the latest industry trends.</p>
+      </div>
+
+      <div class="headshot">
+        <img src="./img/my_image.jpeg" alt="my image">
+      </div>
+    </section>
+
+    <!-- SECTION 2: Skills -->
+    <section class="skills-section" id="skills">
+      <h2>My Skills</h2>
+      <div class="text">
+        I specialize in HTML & CSS for creating responsive, semantic layouts and JavaScript for adding dynamic functionality. Proficient in Laravel and PHP for modern web applications, and skilled in Git for efficient version control. Experienced with design tools and team management tools like Canva & Figma, and Jira Tool
+      </div>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img  src="./img/html.png" alt="" loading="lazy" class="icon icon-card"/>
+          <img src="./img/css.png" alt="" loading="lazy" class="icon icon-card"/>
+          <img src="./img/javascript.png" alt="" loading="lazy" class="icon icon-card"/>
+        </div>
+
+        <div class="second-set animate__animated animate__pulse">
+          <img  src="./img/laravel.png" alt="" loading="lazy" class="icon icon-card"/>
+          <img src="./img/php.png" alt="" loading="lazy" class="icon icon-card"/>
+          <img src="./img/wordpress.png" alt="" loading="lazy" class="icon icon-card"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: PROJECTS -->
+    <section class="projects-section" id="projects">
+        <h2>Projects</h2>
+        <div class="text">
+          Over the years, I've had the opportunity to work on a diverse range of projects, from small business websites to large-scale web applications. Here are Some of my notable projects.
+        </div>
+        <div class="projects-container">
+          <div class="project-container project-card">
+            <img src="./img/expense tracker.png" alt="expense-tracker" loading="lazy" class="project-pic"/>
+            <h3 class="project-title">Expense Tracker</h3>
+            <p class="project-details">A sleek web app for managing finances, allowing users to track, categorize, and visualize expenses. Built with HTML, CSS, and JavaScript, it features real-time updates and responsive design for easy use on any device.            </p>
+            <a href="#" target="_blank" class="project-link">Check it Out</a>
+          </div>
+          <div class="project-container project-card">
+            <img src="./img/netflix clone.png" alt="netflic-clone" loading="lazy" class="project-pic"/>
+            <h3 class="project-title">Netflix Clone</h3>
+            <p class="project-details">Built a Netflix clone with React.js and Firebase, featuring user authentication, movie trailers, and responsive design. Integrated TMDB API to display the latest movies and TV shows, showcasing skills in creating complex, interactive web applications.            </p>
+            <a href="#" target="_blank" class="project-link">Check it Out</a>
+          </div>
+          <div class="project-container project-card">
+            <img src="./img/greeny earth.png" alt="greeny-earth" loading="lazy" class="project-pic"/>
+            <h3 class="project-title">Greeny Earth</h3>
+            <p class="project-details">Developed a responsive Greeny Earth website with HTML, CSS, and JavaScript. Features an interactive map and informative articles to promote environmental awareness, showcasing my skills in creating user-friendly and engaging web experiences.</p>
+            <a href="#" target="_blank" class="project-link">Check it Out</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: Download My Resume -->
+      <section id="resume" class="resume-section">
+        <div class="container">
+            <h2>My Resume</h2>
+            <p>Download my resume: <a href="./doc/resume.pdf" target="_blank" rel="noopener noreferrer" download>Download My Resume</a></p>
+            <iframe src="./doc/resume.pdf" width="50%" height="300px"></iframe>
+        </div>
+    </section>
+
+    <!-- SECTION 5: Contact -->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+
+      <div class="group">
+        <div class="text">
+          I'm always excited to discuss new projects, creative ideas, or opportunities to be part of your vision. Whether you have a question or just want to say hello, feel free to get in touch. I look forward to connecting with you!
+
+        <p><b>Available for Work:</b> Open to freelance opportunities, collaborations, and full-time positions. Let's create something amazing together!</p>
+        </div>
+
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email">
+
+          <label for="message">Message</label>
+          <textarea id="message" cols="30" rows="10"></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <p class="copy">&copy; Copyright 2024</p>
+        <p class="copy">
+          Built with &#x2661; by
+          <a href="#" target="_blank">Aishwarya Rani</a>
+        </p>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>Landing Page</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 ;
+}
+
+header {
+            background-color: #f0e5e5;
+            padding: 5px;
+            text-align: right;
+            
+        }
+header p{
+    font-weight: bold;
+}
+        .social-icons a {
+            display: inline;
+            margin-left: 10px;
+            color: #333;
+            float: left;
+            text-align: center;
+            font-size: 30px;
+        }
+
+.header {
+    background: rgb(233,238,174);
+    background: radial-gradient(circle, rgba(233,238,174,1) 0%, rgba(233,148,227,1) 100%);
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    
+}
+
+.header .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: radial-gradient(circle, rgba(233,238,174,1) 0%, rgba(233,148,227,1) 100%);
+        }
+.header .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+.header .nav-menu {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+.header .nav-menu li {
+            margin-right: 20px;
+        }
+.header .nav-menu li a {
+            text-decoration: none;
+            color: #000;
+        }
+.header .nav-menu li a:hover {
+            text-decoration: underline;
+        }
+.header .search-bar {
+            display: flex;
+            align-items: center;
+        }
+.header .search-bar input[type="search"] {
+            padding: 5px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+.header .search-bar button {
+            padding: 6px 12px;
+            margin-left: 10px;
+            font-size: 16px;
+            background-color: #ff5a5f;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+.header .search-bar button:hover {
+            background-color: #218838;
+        }
+
+.header-right .cta {
+    background: white;
+    color: #ff5a5f;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background: url('./img/background.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.hero-buttons button {
+    background: #ff5a5f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.features {
+    text-align: center;
+    padding: 50px 0;
+    background: rgb(233,238,174);
+    background: radial-gradient(circle, rgba(233,238,174,1) 0%, rgba(233,148,227,1) 100%);
+}
+
+.feature-box {
+    width: 30%;
+    display: inline-block;
+    margin: 20px;
+}
+
+.feature-box h3{
+    font-size: 25px;
+
+}
+
+.about-us {
+    
+    padding: 50px 0;
+    background: white;
+}
+
+.about-content {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.about-content h2 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.about-content p {
+    margin: 40px;
+}
+
+.about-content button {
+    background: #ff5a5f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.about-image {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.services {
+    text-align: center;
+    padding: 10px 0;
+    background: #f8f8f8;
+    margin-bottom: 100px;
+}
+.services h2{
+    font-size: 50px;
+}
+
+.service-box {
+    background-color: #ccc;
+    width: 20%;
+    display: inline-block;
+    margin: 30px;
+    padding: 30px;
+}
+
+.service-box h3{
+font-size: 25px;
+}
+
+.service-box img{
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+}
+footer {
+      background-color: #333;
+      color: #ccc;
+      padding: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;
+    }
+footer a{
+    color: yellow;
+}
+</style>
+
+</head>
+<body>
+    <header>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>Email: <a href="mailto:info@example.com">info@example.com</a> | Phone: +1 (555) 555-5555</p>
+   </header>
+    <section class="header">
+        <nav class="navbar">
+            <div class="navbar-brand">LANDING PAGE</div>
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Page</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="search" placeholder="Search" aria-label="Search">
+                <button type="submit">Search</button>
+            </div>
+        </nav>
+    </section>
+    <section class="hero">
+        <div class="container">
+            <h2>We Are Creative</h2>
+            <h1>Creative Digital Agency</h1>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley and scrambled it to make a type specimen book.</p>
+            <div class="hero-buttons">
+                <button>Read More</button>
+                <button>Request a Consult</button>
+                <button>Consult</button>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="container">
+            <div class="feature-box">
+                <img src="./img/icons8-rocket-64.png" alt="">
+                <h3>Launch Business</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text</p>
+            </div>
+            <div class="feature-box">
+                <img src="./img/it-department (1).png" alt="">
+                <h3>Online Support Team</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text</p>
+            </div>
+            <div class="feature-box">
+                <img src="./img/schedule.png" alt="">
+                <h3>Time Management</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text</p>
+            </div>
+        </div>
+    </section>
+    <section class="about-us">
+        <div class="container">
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>15 years, we passionate about achieving better results for our clients</p>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley.</p>
+                <button>Read More</button>
+            </div>
+            <div class="about-image">
+                <img src="./img/about_us.jpg" alt="About Us">
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="container">
+            <div class="service-box">
+                <img src="./img/2150169858.jpg" alt="">
+                <h3>User Experience</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text</p>
+            </div>
+            <div class="service-box">
+                <img src="./img/167108.jpg" alt="">
+                <h3>Creative Design</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text</p>
+            </div>
+            <div class="service-box">
+                <img src="./img/94833.jpg" alt="">
+                <h3>Digital Marketing</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p class="copy">&copy; Copyright 2024</p>
+        <p class="copy">
+          Built with &#x2661; by
+          <a href="#" target="_blank">Aishwarya Rani</a>
+        </p>
+    </footer>
+</body>
+</html>
